@@ -1,6 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- <?xml-stylesheet type="text/xsl" href="query-c.xsl"?> -->
 
+<!DOCTYPE warehouses[
+  <!ELEMENT warehouses (warehouse*)>
+  <!ELEMENT warehouse (id, name, address, items)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT address (street, city, country)>
+  <!ELEMENT street (#PCDATA)>
+  <!ELEMENT city (#PCDATA)>
+  <!ELEMENT country (#PCDATA)>
+  <!ELEMENT items (item+)>
+  <!ELEMENT item (id, im_id, name, price, qty)>
+  <!ELEMENT im_id (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT qty (#PCDATA)>
+]>
 
 <warehouses>
   <warehouse>
@@ -403,7 +418,7 @@
         <im_id>76420780</im_id>
         <name>Multi-Specialty Kit</name>
         <price>23.04</price>
-        <qty>534</qty>
+        <qty>985</qty>
       </item>
       <item>
         <id>48</id>
