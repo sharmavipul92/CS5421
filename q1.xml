@@ -10,7 +10,7 @@
   <!ELEMENT street (#PCDATA)>
   <!ELEMENT city (#PCDATA)>
   <!ELEMENT country (#PCDATA)>
-  <!ELEMENT items (item+)>
+  <!ELEMENT items (item*)>
   <!ELEMENT item (id, im_id, name, price, qty)>
   <!ELEMENT im_id (#PCDATA)>
   <!ELEMENT price (#PCDATA)>
