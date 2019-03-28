@@ -8,15 +8,16 @@
         </html>
     </xsl:template>
     <xsl:template match="warehouse">
-        <h3> Warehouse: <xsl:value-of select="name"/></h3>
-        <h4>filtered items (qty > 975):</h4>
-        <ul>
-            <xsl:choose>
-                <xsl:when test="items/item[qty > 975]"><xsl:apply-templates select="items/item[qty > 975]"/></xsl:when>
-                <xsl:otherwise>No item found</xsl:otherwise>
-            </xsl:choose>
-        </ul>
-        <br/>
+        <xsl:choose>
+            <xsl:when test="items/item[qty > 975]">
+                <h3> Warehouse: <xsl:value-of select="name"/></h3>
+                <h4>filtered items (qty > 975):</h4>
+                <ul>
+                    <xsl:apply-templates select="items/item[qty > 975]"/>
+                </ul>
+                <br/>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="item">
         <li>

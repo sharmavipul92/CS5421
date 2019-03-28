@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-stylesheet type="text/xsl" href="query-c.xsl"?> -->
+<?xml-stylesheet type="text/xsl" href="query-b.xsl"?>
 
 <!DOCTYPE warehouses[
   <!ELEMENT warehouses (warehouse*)>
@@ -418,7 +418,7 @@
         <im_id>76420780</im_id>
         <name>Multi-Specialty Kit</name>
         <price>23.04</price>
-        <qty>985</qty>
+        <qty>534</qty>
       </item>
       <item>
         <id>48</id>
